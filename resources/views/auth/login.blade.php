@@ -25,6 +25,16 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
+                            <label for="type" class="col-md-4 control-label">Author Type</label>
+                            <div class="col-md-6">
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>Admin</option>
+                                                    <option>Employee</option>
+                                                    </select>
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 

@@ -24,10 +24,10 @@ class CreateStudentTable extends Migration
             $table->string('course_name') -> unsigned();
             $table->string('result');
 
-            $table->foreign('batch_id') -> reference('batch_id') -> on('batch');
-            $table->foreign('batch_name') -> reference('batch_name') -> on('batch');
-            $table->foreign('course_id') -> reference('course_id') -> on('course');
-            $table->foreign('course_name') -> reference('course_name') -> on('course');
+            $table->foreign('batch_id') -> references('batch_id') -> on('Batch');
+            $table->foreign('batch_name') -> references('batch_name') -> on('Batch');
+            $table->foreign('course_id') -> references('course_id') -> on('Course');
+            $table->foreign('course_name') -> references('course_name') -> on('Course');
 
             $table->rememberToken();
             $table->timestamps();

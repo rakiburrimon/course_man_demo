@@ -44,7 +44,7 @@
                             <div class="col-md-6">
                                                 <select class="form-control" id="exampleFormControlSelect1">
                                                     
-                                                    <option>Employee</option>
+                                                    <option value="employee">Employee</option>
                                                     </select>
                             </div>
                         </div>
